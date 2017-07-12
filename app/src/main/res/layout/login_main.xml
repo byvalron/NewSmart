@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    android:layout_gravity="center"
+    android:background="@drawable/login_smart_link"
+    tools:context="com.example.loc_by.newsmart.MainActivity">
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:padding="20sp"
+        android:ems="15"
+        android:hint="@string/login"
+        android:background="@drawable/login_shape"
+        android:drawableLeft="@drawable/login_men"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/passw"
+        android:layout_alignLeft="@+id/passw"
+        android:layout_alignStart="@+id/passw" />
+    <EditText
+        android:id="@+id/passw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:padding="20sp"
+        android:ems="15"
+        android:background="@drawable/login_shape"
+        android:hint="@string/passw"
+        android:drawableLeft="@drawable/login_lock"
+        android:inputType="textPassword"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/log_butt"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/log_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button"
+        android:layout_marginBottom="223dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
